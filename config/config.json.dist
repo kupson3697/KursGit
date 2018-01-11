@@ -1,0 +1,4 @@
+while ($row = mysqli_fetch_array($result, MYSQL_NUM)) {
+                $data[$row[0]] = $row[1];
+            }
+        $json_response = json_encode($data);
